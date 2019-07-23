@@ -1,1 +1,23 @@
 #This file contains code for basic operations in Python3
+#Type-casting
+type(variable_name) #--> shows the data type of this variable
+int(True) #--> 1
+bool(1) #--> True
+
+#basic maths
+2**3 #--> 8 (a**b - a raised to the power b)
+2%3 #--> 2 (Remainder)
+2//3 #--> 0 (Integer quotient)
+
+#basic string operations
+# " " or ' ' can both be used to represent strings
+Name = 'abcdefgh'
+Name[0] #--> a
+Name[0:4] #--> abcd -- Name[x:y] returns first 'y' number of values starting from 'x'
+Name[0:5:2] #--> ace -- Name[x:y:z] returns all the values from Name[x:y] which are 'z' indexes apart
+#We can't assign a new value to one of the list elements
+A = 'Abcd'
+B = A.lower() #--> abcd 
+C = A.upper() #--> ABCD
+D = A.replace('Abc','xyz') #--> D='xyzd'
+E = A.find('bc') #--> 1 -- tells the position of substring's first character in the string
