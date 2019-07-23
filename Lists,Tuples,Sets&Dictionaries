@@ -1,0 +1,5 @@
+#This file will be a guide for working with Compund datatypes
+#Tuples - Ordered sequence - Can contain multiple datatypes in a single tuple - Tuples can't be changed (immutable) - Tuples can be sorted
+tuple = (10,9,8,7,10,9)
+tuple2 = ('disco',1,2)
+tuple3 = tuple + tuple2 #--> 
