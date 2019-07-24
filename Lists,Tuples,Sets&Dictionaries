@@ -2,4 +2,30 @@
 #Tuples - Ordered sequence - Can contain multiple datatypes in a single tuple - Tuples can't be changed (immutable) - Tuples can be sorted
 tuple = (10,9,8,7,10,9)
 tuple2 = ('disco',1,2)
-tuple3 = tuple + tuple2 #--> 
+tuple3 = tuple + tuple2 #--> (10,9,8,7,10,9,'disco',1,2)
+tuple_nested = (1,2,('pop','rock'),(3,4),('disco',(1,2))) #--> We can direclty define nested tuples like this
+tuple_nested[2][1] #--> This will display 'rock'
+
+#Lists - Data SStructure - Ordered sequence - Can contain multiple datatypes in a single list - Lists can be changed (mutable) - Sortable
+List = ['MJ',10.1,1982]
+List.extend(['pop',100]) #--> Adds these TWO new elements to the existing list
+List.append(['pop',100]) #--> Adds only ONE element to this list (considers ['pop',100] as one element)
+List[0] #--> 10.1
+List[0] = 0 #--> List[0] will show 0 as its value after this because lists are mutable
+del(List[0]) #--> Deletes the specified elemnt(s)
+'hard rock'.split() #--> Splits the string at the specified character, which is a SPACE by default -- ['hard','rock']
+'A,B,C,D'.split(,) #--> ['A', 'B', 'C', 'D'] splitted at ','
+help(List) #--> To get help
+
+#Sets - A type of collection - Diff. datatypes - Have UNIQUE elements - Not sequenced
+Set1 = {'a','b','c','a'} #--> Even though we have given two same elements, only one 'a' will be actually stored in this set, named Set1
+A = {'a','b','d'}
+A.add('c') #--> This adds 'c' to the set A, but the order will be changed
+A.remove('c') #--> This will remove 'c' but the order will remain the same
+'a' IN A #--> returns True
+B = {'b','a','d'}
+C = A & B #--> Will make a set C which is intersection of A and B
+D = A.union(B) #--> Makes an union of A and B
+C.issubset(B) #--> True, because C set is a subset of set B
+
+#Dictionaries - Type of collection - 
