@@ -28,4 +28,10 @@ C = A & B #--> Will make a set C which is intersection of A and B
 D = A.union(B) #--> Makes an union of A and B
 C.issubset(B) #--> True, because C set is a subset of set B
 
-#Dictionaries - Type of collection - 
+#Dictionaries - Type of collection - Have unique identifiers called KEYS for every element - Immutable/Mutable/Duplicate
+Dict = {'a':1, 'b':2, 'c':3}
+Dict['a'] #--> 1 
+Dict['d'] = 4 #--> Adds this new KEY-VALUE pair to the Dictionary
+del(Dict['a']) #--> deletes the KEY-VALUE pair having the specified KEY.
+Dict.keys() #--> Shows all the keys
+Dict.values() #--> Shows all the values
