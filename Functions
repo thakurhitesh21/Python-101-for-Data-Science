@@ -1,0 +1,13 @@
+#Takes input in the form of parameters and gives the required output
+#Methods will change the existing data structures but funstions will produce new ones
+
+def func_name(a):
+  #This area is for function documentation using triple quotes """
+  b=a+1
+  #This area is for function documentation using triple quotes """
+  return b
+
+help(func_name) #--> prints the documentation
+
+#writing only 'pass' inside the function body will help it pass as a non-empty function 
+#enumerate() is used to call elements from a data structure
